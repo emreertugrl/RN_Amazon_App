@@ -1,8 +1,9 @@
 import {StyleSheet, Text, View, ScrollView} from 'react-native';
 import React from 'react';
 import Header from '../components/Header';
-import SubHeader from './SubHeader';
-import Category from './Category';
+import SubHeader from '../components/SubHeader';
+import Category from '../components/Category';
+import Carousel from '../components/Carousel';
 
 const HomeScreen = () => {
   return (
@@ -10,6 +11,7 @@ const HomeScreen = () => {
       <Header />
       <SubHeader />
       <Category />
+      <Carousel />
     </ScrollView>
   );
 };
