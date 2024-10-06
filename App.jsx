@@ -1,13 +1,13 @@
-import {SafeAreaView, StatusBar, StyleSheet, Text, View} from 'react-native';
+import {SafeAreaView, StatusBar, StyleSheet} from 'react-native';
 import React from 'react';
-import HomeScreen from './src/screens/HomeScreen';
-import CustomText from './src/CustomText';
+
+import Router from './src/navigation/Router';
 
 const App = () => {
   return (
     <SafeAreaView style={styles.container}>
       <StatusBar backgroundColor={'#9EE4D4'} barStyle={'dark-content'} />
-      <HomeScreen />
+      <Router />
     </SafeAreaView>
   );
 };
@@ -20,8 +20,5 @@ const styles = StyleSheet.create({
     height: 50,
     backgroundColor: 'white',
     color: 'black',
-  },
-  selam: {
-    // color: 'red',
   },
 });

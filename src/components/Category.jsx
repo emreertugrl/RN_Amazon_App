@@ -8,8 +8,10 @@ import {
 } from 'react-native';
 import React from 'react';
 import {Categories} from '../data/Categories';
+import {useNavigation} from '@react-navigation/native';
 
 const Category = () => {
+  const navigation = useNavigation();
   return (
     <ScrollView
       horizontal
@@ -17,6 +19,7 @@ const Category = () => {
       style={styles.container}>
       {Categories.map(item => (
         <TouchableOpacity
+          onPress={() => navigation.navigate('ProductScreen')}
           activeOpacity={0.8}
           key={item.id}
           style={styles.category}>
